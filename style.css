@@ -1,0 +1,121 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+}
+body{
+    background-color: rgb(36, 33, 33);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    height: 100vh;
+    
+}
+h2{
+    margin-top: 33px;
+    font-size: 40px;
+    color: rgba(255, 255, 255, 0.849);
+    font-weight: 100;
+}
+.prompt{
+    background-color: rgb(80, 76, 70);
+    padding: 4px;
+    width: 620px;
+    margin-top: 120px;
+    border-radius: 7px;
+    transition: 0.5s ease-in-out;
+}
+.prompt:hover{
+    box-shadow: 0px 0px 6px wheat;
+
+}
+input,button{
+    font-size: 22px;
+}
+.prompt input{
+    margin-top: 2px;
+    border: none;
+    outline: none;
+    background-color: rgb(90, 86, 79);
+    width: 80%;
+    border-radius: 7px;
+    padding: 5px 7px;
+    color: #232020;
+    outline: none;
+}
+
+.prompt button{
+    background-color: rgb(116, 92, 52);
+    border: none;
+    
+    padding: 5px 6px;
+    border-radius: 9px;
+    transition: 0.5s;
+    cursor: pointer;
+    color: #ffffff;
+}
+
+.prompt button:hover{
+    
+    background-color: rgb(63, 52, 33);
+    
+}
+footer p{
+    position: absolute;
+    bottom:0 ;
+    left: 0;
+    color: aliceblue;
+    margin: 3px 5px;
+}
+.images{
+    display: flex;
+    gap: 30px;
+}
+.images div{
+    margin-top: 120px;
+    width: 150px;
+    height: 150px;
+    background-color: rgba(90, 86, 79, 0.26);
+    border-radius: 12px;
+    border: 1px solid rgb(43, 42, 42);
+    box-shadow: 0 0 12px rgb(98, 93, 93);
+
+    
+}
+.images div img{
+    width: 100%;
+    border-radius: 12px;
+
+}
+/* @media (max-width: 768px) {
+    .prompt{
+        width: 90%;
+    }
+    .images div{
+        width: 150px;
+    }
+} */
+
+
+
+@media (min-width:301px) and (max-width: 668px) {
+    h2{
+        font-size:22px ;
+    }
+    .images div{
+        width: 100px;
+        height: 100px;
+    }
+    .prompt{
+        width: 350px;
+        display: flex;
+        gap: 13px;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+    .prompt input{
+        width: 330px;
+        margin: 4px 5px;
+    }
+}
